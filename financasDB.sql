@@ -60,9 +60,6 @@ CREATE TABLE IF NOT EXISTS cliente_transacoes(
 
 
 
-
-
-
 -- CREATE TABLE IF NOT EXISTS banco (
 -- 	numero INTEGER NOT NULL,
 -- 	nome VARCHAR(50) NOT NULL,
