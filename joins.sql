@@ -35,3 +35,18 @@ RIGHT JOIN banco ON banco.numero = agencia.banco_numero;
 SELECT banco.numero, banco.nome, agencia.numero, agencia.nome
 FROM banco
 FULL JOIN agencia ON agencia.banco_numero = banco.numero;
+
+
+SELECT banco.nome,
+        agencia.nome,
+        conta_corrente.numero,
+        conta_corrente.digito,
+        cliente.nome
+FROM banco
+JOIN agencia ON agencia.banco_numero = banco_numero
+JOIN conta_corrente
+     ON conta_corrente.banco_numero = banco.numero
+     AND conta_corrente.agencia_numero = agencia.numero
+JOIN cliente
+     ON cliente.numero = conta_corrente.cliente_numero;
+
