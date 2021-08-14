@@ -118,3 +118,30 @@ CREATE TABLE IF NOT EXISTS cliente_transacoes(
 -- 	data_criacao TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 -- 	FOREIGN KEY (banco_numero,agencia_numero,conta_corrente_numero,conta_corrente_digito,cliente_numero) REFERENCES conta_corrente(banco_numero,agencia_numero,numero,digito,cliente_numero)
 -- );
+
+
+
+
+-- CREATE TABLE IF NOT EXISTS teste_a (id serial primary key, valor varchar(10));
+-- CREATE TABLE IF NOT EXISTS teste_b (id serial primary key, valor varchar(10));
+
+
+
+-- INSERT INTO teste_a (valor) VALUES ('teste1');
+-- INSERT INTO teste_a (valor) VALUES ('teste2');
+-- INSERT INTO teste_a (valor) VALUES ('teste3');
+-- INSERT INTO teste_a (valor) VALUES ('teste4');
+
+-- INSERT INTO teste_b (valor) VALUES ('teste_a');
+-- INSERT INTO teste_b (valor) VALUES ('teste_b');
+-- INSERT INTO teste_b (valor) VALUES ('teste_c');
+-- INSERT INTO teste_b (valor) VALUES ('teste_d');
+
+
+-- SELECT tbla.valor, tblb.valor
+-- FROM teste_a tbla
+-- CROSS JOIN teste_b  tblb;
+
+
+-- DROP TABLE IF EXISTS teste_a;
+-- DROP TABLE IF EXISTS teste_b;
