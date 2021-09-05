@@ -47,3 +47,6 @@ WITH clientes_e_transacoes AS(
 SELECT cliente_nome, tipo_transacao_nome, tipo_transacao_valor
 FROM clientes_e_transacoes;
 
+
+
+
